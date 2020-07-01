@@ -16,7 +16,7 @@ nav{
 }
 
 div.logo{
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ div.container{
 
 
 .section{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 
@@ -67,6 +67,7 @@ div.info{
 
 img{
     height: 70px;
+    margin: 5px;
 }
 
 table, th, td {
@@ -78,10 +79,19 @@ table, th, td {
 }
 
 .col-1{
+    width: 30%;
+    float: left;
+    padding: 20px 0;
+}
+.col-2{
+    width: 70%;
+    float:right;
+}
+.col-3{
     width: 70%;
     float: left;
 }
-.col-2{
+.col-4{
     width: 30%;
     float:right;
     padding: 20px 0;
