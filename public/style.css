@@ -61,6 +61,19 @@ table, th, td {
     border: 1px solid black;
 }
 
+.row{
+    overflow: hidden;
+}
+
+.col-1{
+    width: 70%;
+    float: left;
+}
+.col-2{
+    width: 30%;
+    float:right;
+    padding: 50px 0;
+}
 
 button {
     margin: 4px;
