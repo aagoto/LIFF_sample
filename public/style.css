@@ -29,7 +29,7 @@ div.container{
 }
 
 
-h1{
+h2{
     color: hotpink;
 }
 
@@ -51,11 +51,10 @@ td{
 
 div.info{
     height: 100px;
-    padding: 5px;
 }
 
 img{
-    height: 100px;
+    height: 40%;
 }
 
 table, th, td {
