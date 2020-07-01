@@ -104,6 +104,12 @@ button {
     margin: 4px;
 }
 
+.copyright{
+    background: #ccc;
+    text-align: center;
+    padding: 40px;
+}
+
 #code-block {
     background-color: #eee;
     border: 1px solid #999;
