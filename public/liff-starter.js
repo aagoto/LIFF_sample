@@ -106,7 +106,7 @@ function registerButtonHandlers() {
     // openWindow call
     document.getElementById('openWindowButton').addEventListener('click', function() {
         liff.openWindow({
-            url: 'https://line.me',
+            url: 'https://choice-career.com/motherhelper/',
             external: true
         });
     });
