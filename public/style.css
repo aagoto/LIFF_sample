@@ -2,29 +2,66 @@ html {
     font-size: 11px;
 }
 
+/* header */
+header{
+    overflow: hidden;
+}
+
+nav{
+    height: 50px;
+}
+
+div.logo{
+    width: 50px;
+    float: left;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.title{
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* container */
+div.container{
+    text-align: center;
+}
+
+
+h1{
+    color: hotpink;
+}
+
 table {
     width: 100%;
     table-layout: fixed;
     word-break: break-all;
 }
 
-div {
-    max-width: 100%;
-    text-align: center;
-}
 
 th {
     text-align: center;
+}
+
+td{
+    height: 180px;
+    padding: 10px;
+}
+
+div.info{
+    height: 100px;
+    padding: 5px;
+}
+
+img{
+    height: 100px;
 }
 
 table, th, td {
     border: 1px solid black;
 }
 
-img { 
-    max-width: 25%; 
-    height: auto; 
-}
 
 button {
     margin: 4px;
