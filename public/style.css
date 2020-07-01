@@ -2,6 +2,10 @@ html {
     font-size: 11px;
 }
 
+p{
+    margin: 0px;
+}
+
 /* header */
 header{
     overflow: hidden;
@@ -12,13 +16,15 @@ nav{
 }
 
 div.logo{
-    width: 50px;
-    float: left;
     text-align: center;
-    vertical-align: middle;
 }
 
-div.title{
+.logo_img{
+    width: 200px;
+    height: auto;
+}
+
+h1{
     text-align: center;
     vertical-align: middle;
 }
@@ -26,6 +32,11 @@ div.title{
 /* container */
 div.container{
     text-align: center;
+}
+
+
+.section{
+    margin-bottom: 30px;
 }
 
 
@@ -72,7 +83,11 @@ table, th, td {
 .col-2{
     width: 30%;
     float:right;
-    padding: 50px 0;
+    padding: 20px 0;
+}
+
+h4{
+    margin: 10px;
 }
 
 button {
