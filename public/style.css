@@ -3,7 +3,7 @@ html {
 }
 
 p{
-    margin: 0px;
+    margin: 0 10px;
 }
 
 /* header */
@@ -67,7 +67,7 @@ div.info{
 
 img{
     height: 70px;
-    margin: 5px;
+    margin: 10px;
 }
 
 table, th, td {
