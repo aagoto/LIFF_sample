@@ -45,8 +45,8 @@ th {
 }
 
 td{
-    height: 180px;
-    padding: 10px;
+    height: 250px;
+    padding: 5px;
 }
 
 div.info{
@@ -54,7 +54,7 @@ div.info{
 }
 
 img{
-    height: 40%;
+    height: 70px;
 }
 
 table, th, td {
