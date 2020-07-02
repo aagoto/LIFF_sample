@@ -87,7 +87,7 @@ function registerButtonHandlers() {
 
     document.getElementById('openWindowButton_2').addEventListener('click', function() {
         liff.openWindow({
-            url: 'https://corp.choice-career.com/',
+            url: 'https://line.me/R/ti/p/%40674zdcbh',
             external: true
         });
     });
