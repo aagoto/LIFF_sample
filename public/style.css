@@ -104,6 +104,7 @@ button {
     margin: 4px;
     width: 100px;
     text-align: center;
+    padding: auto;
 }
 
 .copyright{
