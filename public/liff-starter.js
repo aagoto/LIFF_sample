@@ -84,6 +84,14 @@ function registerButtonHandlers() {
         });
     });
 
+    // openWindow call
+    document.getElementById('openRegisterButton').addEventListener('click', function() {
+        liff.openWindow({
+            url: 'https://line.me/R/ti/p/%40674zdcbh',
+            external: true
+        });
+    });
+
     // closeWindow call
     document.getElementById('closeWindowButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
@@ -92,6 +100,7 @@ function registerButtonHandlers() {
             liff.closeWindow();
         }
     });
+
 
     // sendMessages call
     document.getElementById('sendMessageButton').addEventListener('click', function() {
