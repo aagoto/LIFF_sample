@@ -84,6 +84,14 @@ function registerButtonHandlers() {
         });
     });
 
+
+    document.getElementById('openWindowButton_2').addEventListener('click', function() {
+        liff.openWindow({
+            url: 'https://corp.choice-career.com/',
+            external: true
+        });
+    });
+
     // closeWindow call
     document.getElementById('closeWindowButton').addEventListener('click', function() {
         if (!liff.isInClient()) {
