@@ -107,12 +107,12 @@ button {
 p.question{
     font-weight: bold;
     text-decoration: underline;
-    text-align: left;
+    text-align: start;
 }
 
 p.answer{
     color: red;
-    text-align: left;
+    text-align: start;
 }
 
 .copyright{
