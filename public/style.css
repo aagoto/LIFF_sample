@@ -2,9 +2,6 @@ html {
     font-size: 11px;
 }
 
-p{
-    margin: 0 10px;
-}
 
 /* header */
 header{
@@ -107,10 +104,12 @@ button {
 .question{
     font-weight: bold;
     text-decoration: underline;
+    text-align: left;
 }
 
 .answer{
     color: red;
+    text-align: left;
 }
 
 .copyright{
