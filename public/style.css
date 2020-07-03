@@ -25,9 +25,10 @@ div.logo{
     height: auto;
 }
 
-h1{
+h2{
     text-align: center;
     vertical-align: middle;
+    color: hotpink;
 }
 
 /* container */
@@ -37,10 +38,6 @@ h1{
     margin-bottom: 60px;
 }
 
-
-h2{
-    color: hotpink;
-}
 
 table {
     width: 100%;
@@ -99,6 +96,7 @@ h4{
 
 button {
     margin: 4px;
+    text-align: center;
 }
 
 p.question{
