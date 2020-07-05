@@ -108,7 +108,7 @@ function registerButtonHandlers() {
                 liff.shareTargetPicker([
                     {
                         'type': 'text',
-                        'text': 'Hello, World!'
+                        'text': '「Mother Helper」の招待が届きました！https://line.me/R/ti/p/%40674zdcbh'
                     }
                 ])
                     .then(
