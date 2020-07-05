@@ -108,7 +108,7 @@ function registerButtonHandlers() {
                 liff.shareTargetPicker([
                     {
                         'type': 'text',
-                        'text': 'LINEを使ったデジタル母子手帳「Mother Helper」の招待が届きました！子供の成長管理はもちろん、子育てに関するお悩み相談も受けています。まずは友達登録！https://line.me/R/ti/p/%40674zdcbh'
+                        'text': 'LINEを使ったデジタル母子手帳「Mother Helper」の招待が届きました！子供の成長管理はもちろん、子育てに関するお悩み相談も受けています。まずは友達登録☺️https://line.me/R/ti/p/%40674zdcbh'
                     }
                 ])
                     .then(
