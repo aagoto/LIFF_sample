@@ -94,9 +94,14 @@ h4{
     margin: 10px;
 }
 
-button {
+.btn {
     margin: 4px;
     text-align: center;
+}
+
+.img_col{
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 p.question{
