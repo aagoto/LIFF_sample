@@ -118,55 +118,6 @@ function registerButtonHandlers() {
         }
     });
 
-    // scanCode call
-    document.getElementById('scanQrCodeButton').addEventListener('click', function() {
-        if (!liff.isInClient()) {
-            sendAlertIfNotInClient();
-        } else {
-            liff.scanCode().then(result => {
-                // e.g. result = { value: "Hello LIFF app!" }
-                const stringifiedResult = JSON.stringify(result);
-                document.getElementById('scanQrField').textContent = stringifiedResult;
-                toggleQrCodeReader();
-            }).catch(err => {
-                document.getElementById('scanQrField').textContent = "scanCode failed!";
-            });
-        }
-    });
-
-    // get access token
-    document.getElementById('getAccessToken').addEventListener('click', function() {
-        if (!liff.isLoggedIn() && !liff.isInClient()) {
-            alert('To get an access token, you need to be logged in. Please tap the "login" button below and try again.');
-        } else {
-            const accessToken = liff.getAccessToken();
-            document.getElementById('accessTokenField').textContent = accessToken;
-            toggleAccessToken();
-        }
-    });
-
-    // get profile call
-    document.getElementById('getProfileButton').addEventListener('click', function() {
-        liff.getProfile().then(function(profile) {
-            document.getElementById('userIdProfileField').textContent = profile.userId;
-            document.getElementById('displayNameField').textContent = profile.displayName;
-
-            const profilePictureDiv = document.getElementById('profilePictureDiv');
-            if (profilePictureDiv.firstElementChild) {
-                profilePictureDiv.removeChild(profilePictureDiv.firstElementChild);
-            }
-            const img = document.createElement('img');
-            img.src = profile.pictureUrl;
-            img.alt = 'Profile Picture';
-            profilePictureDiv.appendChild(img);
-
-            document.getElementById('statusMessageField').textContent = profile.statusMessage;
-            toggleProfileData();
-        }).catch(function(error) {
-            window.alert('Error getting profile: ' + error);
-        });
-    });
-
     document.getElementById('shareTargetPicker').addEventListener('click', function() {
         if (!liff.isInClient()) {
             sendAlertIfNotInClient();
@@ -202,45 +153,4 @@ function registerButtonHandlers() {
             window.location.reload();
         }
     });
-}
-
-/**
-* Alert the user if LIFF is opened in an external browser and unavailable buttons are tapped
-*/
-function sendAlertIfNotInClient() {
-    alert('This button is unavailable as LIFF is currently being opened in an external browser.');
-}
-
-/**
-* Toggle access token data field
-*/
-function toggleAccessToken() {
-    toggleElement('accessTokenData');
-}
-
-/**
-* Toggle profile info field
-*/
-function toggleProfileData() {
-    toggleElement('profileInfo');
-}
-
-/**
-* Toggle scanCode result field
-*/
-function toggleQrCodeReader() {
-    toggleElement('scanQr');
-}
-
-/**
-* Toggle specified element
-* @param {string} elementId The ID of the selected element
-*/
-function toggleElement(elementId) {
-    const elem = document.getElementById(elementId);
-    if (elem.offsetWidth > 0 && elem.offsetHeight > 0) {
-        elem.style.display = 'none';
-    } else {
-        elem.style.display = 'block';
-    }
 }
