@@ -96,7 +96,7 @@ h4{
 
 .btn{
     text-align: center;
-    width: 150px;
+    display: block;
 }
 
 .img_col{
